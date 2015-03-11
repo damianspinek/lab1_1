@@ -1,6 +1,11 @@
 package pl.com.bottega.ecommerce.sales.domain.offer;
 
 public class Discount {
+	public Discount(String cause, Money value) {
+		super();
+		Cause = cause;
+		this.value = value;
+	}
 	private String Cause;
 	private Money value;
 	public String getCause() {
